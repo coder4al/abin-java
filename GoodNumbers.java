@@ -1,17 +1,13 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-// 2, 9, 16, 17, 26, 28, 35, 36, 45, 50, 54, 65, 72, 73, 82, 90, 91, 100, 107, 108, 135
-
 public class GoodNumbers {
 
     private static boolean goodNum(long z) {
         for (int i = 1; Math.pow(i, 3) <= z; i++)
-            for (int j = 1; j <= z; j++)
-                if (Math.pow(i, 3) + Math.pow(j, 3) == z) {
-                    System.out.println(z);
+            for (int j = i; j <= z; j++)
+                if (Math.pow(i, 3) + Math.pow(j, 3) == z)
                     return true;
-                }
 
         return false;
     }
