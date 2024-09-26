@@ -23,6 +23,6 @@ public class MakePalin {
         while (!palindrome(str.substring(i, len) + str.charAt(i)) && i < len - 1)
             i++;
 
-        System.out.println(i + " chars need, " + str.reverse().substring(len - i));
+        System.out.println(i + 1 + " chars need, " + str.reverse().substring(len - 1 - i));
     }
 }
