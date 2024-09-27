@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 public class ReverseK extends LinkedList<Integer> {
@@ -17,11 +16,11 @@ public class ReverseK extends LinkedList<Integer> {
         }
 
         int k = sc.nextInt();
-        int t = list.size() / k + (list.size() % k > 0 ? 1 : 0) + 1;
+        int i = list.size() / k + (list.size() % k > 0 ? 1 : 0) + 1;
 
-        while (--t > 0) {
+        while (--i > 0) {
             List<Integer> sub = new ArrayList<>();
-            if (t == 1 && list.size() % k > 0) {
+            if (i == 1 && list.size() % k > 0) {
                 sub.addAll(list.subList(0, list.size() % k).reversed());
                 list.removeRange(0, list.size() % k);
             } else {
