@@ -1,7 +1,38 @@
 import java.util.Scanner;
+import java.util.Arrays;;
 
 public class PlayLists {
+    // // O(n^2), 
+    // private static int countList(int airTime, int[] songs, int n) {
+    // int count = 0, exec = 0, val;
+    // int[] tmp = new int[songs.length - 1];
 
+    // for (int i = 0; i < songs.length-1; i++) {
+    // exec++;
+    // val = songs[i] + songs[i+1];
+    // if (val < airTime) {
+    // tmp[i] = val;
+    // }
+    // }
+
+    // System.out.println(Arrays.toString(songs));
+    // System.out.println(Arrays.toString(tmp));
+
+    // int k;
+    // for (int i = 0; i < tmp.length; i++)
+    // for (int j = 0; j < songs.length; j++) {
+    // exec++;
+    // if (tmp[i] != 0 && j != i && j != i+1 && tmp[i] + songs[j] == airTime) {
+    // count++;
+    // System.out.printf("%d %d\n", tmp[i], songs[j]);
+    // }
+    // }
+
+    // System.out.println("Iterations : " + exec);
+    // return count;
+    // }
+
+    // O(n^3), O(1)
     private static int countList(int airTime, int[] songs, int n) {
         int count = 0, exec = 0;
         for (int i = 0; i < songs.length; i++)
@@ -14,7 +45,7 @@ public class PlayLists {
                     }
                 }
 
-        System.out.println(exec);
+        System.out.println("Iterations : " + exec);
         return count;
     }
 
@@ -23,6 +54,6 @@ public class PlayLists {
 
         int[] songs = { 7, 14, 21, 19, 17, 2, 29, 5 };
 
-        System.out.println(countList(40, songs, songs.length));
+        System.out.println("Count : " + countList(40, songs, songs.length));
     }
 }
