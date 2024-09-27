@@ -21,7 +21,8 @@ public class SmallestAlpha {
             }
         }
 
-        System.out.println("Smallest Alpha Not Found : " + min);
+        if (min <= 122)
+            System.out.println("Smallest Alpha Not Found : " + min);
 
         sc.close();
     }
