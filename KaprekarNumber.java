@@ -12,7 +12,7 @@ public class KaprekarNumber {
         if (num == (sqr / div + sqr % div))
             System.out.println("Kaprekar Number");
         else
-            System.out.println("Not a Kaprekar Number");
+            System.out.println("Not a Kaprekar Numbe");
 
         sc.close();
     }
