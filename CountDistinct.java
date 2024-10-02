@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -10,7 +8,7 @@ public class CountDistinct {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        Set<Integer> list = new HashSet();
+        Set<Integer> list = new HashSet<>();
         
         while (n-- > 0) {
             list.add(sc.nextInt());

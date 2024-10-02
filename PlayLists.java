@@ -1,8 +1,5 @@
-import java.util.Scanner;
-import java.util.Arrays;;
-
 public class PlayLists {
-    // // O(n^2), 
+    // // O(n^2),
     // private static int countList(int airTime, int[] songs, int n) {
     // int count = 0, exec = 0, val;
     // int[] tmp = new int[songs.length - 1];
@@ -50,8 +47,6 @@ public class PlayLists {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
         int[] songs = { 7, 14, 21, 19, 17, 2, 29, 5 };
 
         System.out.println("Count : " + countList(40, songs, songs.length));
